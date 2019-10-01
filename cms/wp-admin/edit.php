@@ -409,7 +409,6 @@ $_SERVER['REQUEST_URI'] = remove_query_arg( array( 'locked', 'skipped', 'updated
 <input type="hidden" name="author" value="<?php echo esc_attr( $_REQUEST['author'] ); ?>" />
 <?php } ?>
 
-
 <?php if ( ! empty( $_REQUEST['show_sticky'] ) ) { ?>
 <input type="hidden" name="show_sticky" value="1" />
 <?php } ?>
