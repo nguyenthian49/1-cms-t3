@@ -15,7 +15,6 @@ $parent_file  = 'edit.php';
 $submenu_file = 'edit.php';
 
 wp_reset_vars( array( 'action' ) );
-
 if ( isset( $_GET['post'] ) && isset( $_POST['post_ID'] ) && (int) $_GET['post'] !== (int) $_POST['post_ID'] ) {
 	wp_die( __( 'A post ID mismatch has been detected.' ), __( 'Sorry, you are not allowed to edit this item.' ), 400 );
 } elseif ( isset( $_GET['post'] ) ) {
